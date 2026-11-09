@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Janaka Video - Nền Tảng Học Lập Trình Qua Video</title>
+    <meta name="description" content="Janaka Video - Nền tảng học lập trình miễn phí với video chất lượng cao. Khóa học JavaScript, React, Node.js, Python và nhiều công nghệ khác." />
+    <meta name="keywords" content="lập trình, coding, video học, tutorial, javascript, react, nodejs, python, programming, học code" />
+    <meta name="author" content="Janaka Video" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Janaka Video - Học Lập Trình Qua Video" />
+    <meta property="og:description" content="Nền tảng học lập trình miễn phí với video chất lượng cao và trò chơi coding thú vị." />
+    <meta property="og:image" content="https://i.ibb.co/JWKvbRS5/Gemini-Generated-Image-2nftx42nftx42nft.png" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Janaka Video - Học Lập Trình Qua Video" />
+    <meta name="twitter:description" content="Nền tảng học lập trình miễn phí với video chất lượng cao." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.ibb.co/JWKvbRS5/Gemini-Generated-Image-2nftx42nftx42nft.png" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="mobile/manifest.json" />
+    <meta name="theme-color" content="#17212b" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//i.ibb.co">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <button id="sidebarToggle" class="menu-btn" aria-label="Mở/đóng menu sidebar" aria-expanded="false">
+          <span class="material-icons">menu</span>
+        </button>
+        <a href="/" class="logo-container">
+          <img
+            src="https://i.ibb.co/JWKvbRS5/Gemini-Generated-Image-2nftx42nftx42nft.png"
+            alt="Janaka Logo"
+            class="main-logo"
+          />
+          <span class="logo-text">Janaka</span>
+        </a>
+      </div>
+
+      <div class="search-bar">
+        <form class="search-form">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Tìm kiếm video..."
+            aria-label="Tìm kiếm video"
+          />
+          <button type="button" class="search-button" aria-label="Tìm kiếm">
+            <span class="material-icons">search</span>
+          </button>
+        </form>
+      </div>
+
+      <div class="header-right">
+        <button class="menu-btn">
+          <span class="material-icons">video_call</span>
+        </button>
+        <button class="menu-btn">
+          <span class="material-icons">notifications</span>
+        </button>
+        <button class="menu-btn">
+          <span class="material-icons">account_circle</span>
+        </button>
+      </div>
+    </header>
+    <!-- sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-links">
+        <a href="#" class="sidebar-item active" data-view="home">
+          <span class="material-icons">home</span> <span>Trang chủ</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="explore">
+          <span class="material-icons">explore</span> <span>Khám phá</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="create-video">
+          <span class="material-icons">video_call</span>
+          <span>Tạo Video</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="my-videos">
+          <span class="material-icons">video_library</span>
+          <span>Video của tôi</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="notifications">
+          <span class="material-icons">notifications</span>
+          <span>Thông báo</span>
+        </a>
+        <hr class="sidebar-divider" />
+        <a href="#" class="sidebar-item" data-view="history">
+          <span class="material-icons">history</span> <span>Lịch sử</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="liked">
+          <span class="material-icons">thumb_up</span>
+          <span>Video đã thích</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="music">
+          <span class="material-icons">library_music</span> <span>Âm nhạc</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="gaming">
+          <span class="material-icons">sports_esports</span>
+          <span>Trò chơi</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="playlists">
+          <span class="material-icons">playlist_play</span>
+          <span>Danh sách phát</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="library">
+          <span class="material-icons">library_books</span>
+          <span>Thư viện</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="watchlater">
+          <span class="material-icons">watch_later</span> <span>Xem sau</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="account">
+          <span class="material-icons">account_circle</span> <span>Tài khoản</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="help">
+          <span class="material-icons">help</span> <span>Trợ giúp</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="feedback">
+          <span class="material-icons">feedback</span> <span>Phản hồi</span>
+        </a>
+        <a href="#" class="sidebar-item" data-view="shorts">
+          <span class="material-icons">video_short</span>
+          <span>Video ngắn</span>
+        </a>
+      </div>
+    </aside>
+    <!-- content -->
+    <main class="main-content">
+      <!-- HOME VIEW -->
+      <div id="view-home" class="view-section">
+        <section class="home-intro" aria-labelledby="home-title">
+          <div>
+            <p class="eyebrow"><span class="material-icons">auto_awesome</span> Học theo nhịp của bạn</p>
+            <h1 id="home-title">Mở khóa kỹ năng mới,<br /><span>từng video một.</span></h1>
+            <p class="intro-copy">Khám phá các bài học lập trình được chọn lọc, không quảng cáo và luôn sẵn sàng cho phiên học tiếp theo.</p>
+          </div>
+        </section>
+        <nav class="category-nav">
+          <a href="#" class="category-item active">Tất cả</a>
+          <a href="#" class="category-item">Đề Xuất</a>
+          <a href="#" class="category-item">Âm nhạc</a>
+          <a href="#" class="category-item">Trò chơi</a>
+          <a href="#" class="category-item">Tin tức</a>
+          <a href="#" class="category-item">Công nghệ</a>
+          <a href="#" class="category-item">Du lịch</a>
+          <a href="#" class="category-item">Thể thao</a>
+          <a href="#" class="category-item">Giáo dục</a>
+          <a href="#" class="category-item"> Trực tiếp </a>
+          <a href="#" class="category-item">Phim ảnh</a>
+          <a href="#" class="category-item">Thời trang</a>
+          <a href="#" class="category-item">Ẩm thực</a>
+        </nav>
+        <!-- Các video -->
+        <div class="video-grid">
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/lfmg-EJ8gm4?si=mYW05N67YcW4_xXp"
+                title="Video 1"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">JavaScript Full Course</h3>
+              <p class="video-meta">Janaka Video • 100K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/xND0t1pr3KY"
+                title="Video 2"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">C Programming</h3>
+              <p class="video-meta">Janaka Video • 500K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/HGTJBPNC-Gw"
+                title="Video 3"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Hướng dẫn HTML,CSS cơ bản</h3>
+              <p class="video-meta">Janaka Video • 20K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/5OdVJbNCSso?si=J-cyDdgOqjsKKuAU"
+                title="Video 4"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Lập trình SQL</h3>
+              <p class="video-meta">Janaka Video • 1M lượt xem</p>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/kK7L2ISGucM?si=575YHs47aOhph39q"
+                title="Video 5"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Các hệ điều hành</h3>
+              <p class="video-meta">Janaka Video • 300K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/5beOlS5Ts24?si=k5EXRap2cfZEYhF5"
+                title="Video 6"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Các ngôn ngữ lập trình</h3>
+              <p class="video-meta">Janaka Video • 150K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/mAFoROnOfHs?si=TuE1ZtwZ3ZMSxKv3"
+                title="Video 7"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Hướng dẫn Git & GitHub</h3>
+              <p class="video-meta">Janaka Video • 400K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/CgkZ7MvWUAA?si=LB7SwwCn7xrga07y"
+                title="Video 8"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Khóa học React.js</h3>
+              <p class="video-meta">Janaka Video • 250K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/gINcvMbwsu0?si=eOmrJc8JypI0PggF"
+                title="Video 9"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Các loại Framework</h3>
+              <p class="video-meta">Janaka Video • 600K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/ODpB9-MCa5s?si=_Qu98AS7CTueCRpy"
+                title="Video 10"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Khóa học về UI/UX</h3>
+              <p class="video-meta">Janaka Video • 800K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/ZRpgQ1vLWhI?si=0G-JeHMpIoGgbNug"
+                title="Video 11"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Khóa học LLM - Learn Language Model</h3>
+              <p class="video-meta">Janaka Video • 350K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/ADg3VdITIVs?si=Y5h0PNksAOLNKA_D"
+                title="Video 12"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Khóa học Machine Learning</h3>
+              <p class="video-meta">Janaka Video • 450K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/p5bcGb_epR4?si=db9zLOJW6KfOZN_4"
+                title="Video 13"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Tóm tắt DevOps trong 8 phút</h3>
+              <p class="video-meta">Janaka Video • 275K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/_a5j7KoflTs?si=La_3B6gVqM9N7Tyb"
+                title="Video 14"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Học ngôn ngữ Sass</h3>
+              <p class="video-meta">Janaka Video • 320K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/dlOHx5B9A74?si=HxnBdbIy9l7TwDwI"
+                title="Video 15"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Những khái niệm cơ bản về Cloud Computing</h3>
+              <p class="video-meta">Janaka Video • 290K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/5GrYtF789nM?si=bmXH_FjOmht7_z6F"
+                title="Video 16"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Tổng Hợp kiến thức về linh kiện máy tính</h3>
+              <p class="video-meta">Janaka Video • 310K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/xwI5OBEnsZU?si=ceDnnHe7aRcLHXwS"
+                title="Video 17"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Cấu trúc Dữ liệu và Giải thuật</h3>
+              <p class="video-meta">Janaka Video • 400K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/FTzrT1QbGkw?si=ib8_Eo8EAT7L0EZl"
+                title="Video 18"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Lộ trình học Front end năm 2025</h3>
+              <p class="video-meta">Janaka Video • 220K lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/xfBbLg6-4xY?si=d8w89VNUXY02DvIZ"
+                title="Video 19"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Tìm hiểu về Docker</h3>
+              <p class="video-meta">Janaka video</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/-GfSbk_VqSk?si=5Yl1pHwUGg7OMZ7I"
+                title="Video 20"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Tìm hiểu về bảo mật trang web (Web security)</h3>
+              <p class="video-meta">Janaka video</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/zZ6vybT1HQs?si=u7EhGd4FoC48aEx-"
+                title="Video 21"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Khoá Học về PHP</h3>
+              <p class="video-meta">Janaka video</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/jwCmIBJ8Jtc?si=0s6VU2dPGJ90uS3c"
+                title="Video 22"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Tìm hiểu về Figma-UI Desing</h3>
+              <p class="video-meta">Janaka video</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/ix9cRaBkVe0?si=3LRDt_xpWI4WG0mc"
+                title="Video 23"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Tìm hiểu về Python </h3>
+              <p class="video-meta">Janaka Video • 0 lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/p7nJiIvD-To?si=TIhi1dK66e4lM7XG"
+                title="Video 24"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Top 5 IDE xịn xò</h3>
+              <p class="video-meta">Janaka Video • 18k lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/v392lEyM29A"
+                title="Linux full course"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Linux full course</h3>
+              <p class="video-meta">Janaka Video • 18k lượt xem</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe
+                src="https://www.youtube.com/embed/urBwZlYH5Cw"
+                title="Learn Japanese with Cooking"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Learn Japanese with Cooking</h3>
+              <p class="video-meta">Janaka Video • 108k lượt xem</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- HISTORY VIEW -->
+      <div id="view-history" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2><span class="material-icons">history</span> Lịch sử xem</h2>
+          <button id="clear-history" class="btn-secondary">Xóa lịch sử</button>
+        </div>
+        <div id="history-content" class="saved-videos-grid">
+          <p class="empty-state">📺 Chưa có video nào trong lịch sử xem.</p>
+        </div>
+      </div>
+
+      <!-- LIKED VIDEOS VIEW -->
+      <div id="view-liked" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2><span class="material-icons">thumb_up</span> Video đã thích</h2>
+        </div>
+        <div id="liked-content" class="saved-videos-grid">
+          <p class="empty-state">
+            ❤️ Chưa có video nào được thích. Nhấn nút thích trên video để thêm
+            vào đây!
+          </p>
+        </div>
+      </div>
+
+      <!-- WATCH LATER VIEW -->
+      <div id="view-watchlater" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2><span class="material-icons">watch_later</span> Xem sau</h2>
+        </div>
+        <div id="watchlater-content" class="saved-videos-grid">
+          <p class="empty-state">
+            ⏰ Chưa có video nào trong danh sách xem sau.
+          </p>
+        </div>
+      </div>
+
+      <!-- LIBRARY VIEW - ENHANCED WITH ANALYTICS -->
+      <div id="view-library" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2>
+            <span class="material-icons">library_books</span> Thư viện Học tập
+          </h2>
+        </div>
+
+        <div class="library-3d-container">
+          <!-- Shelf 1: Basic Programming -->
+          <div class="book-shelf">
+            <h3 class="shelf-title">Ngôn ngữ Cơ bản</h3>
+            <div class="books-container">
+              <div class="book" data-language="c">
+                <div class="book-spine">C</div>
+                <div class="book-cover">
+                  <h4>Ngôn ngữ C</h4>
+                  <p>Ngôn ngữ lập trình hệ thống mạnh mẽ</p>
+                </div>
+              </div>
+              <div class="book" data-language="python">
+                <div class="book-spine">Python</div>
+                <div class="book-cover">
+                  <h4>Python</h4>
+                  <p>Ngôn ngữ dễ học, ứng dụng rộng</p>
+                </div>
+              </div>
+              <div class="book" data-language="javascript">
+                <div class="book-spine">JS</div>
+                <div class="book-cover">
+                  <h4>JavaScript</h4>
+                  <p>Ngôn ngữ web động</p>
+                </div>
+              </div>
+              <div class="book" data-language="java">
+                <div class="book-spine">Java</div>
+                <div class="book-cover">
+                  <h4>Java</h4>
+                  <p>Ngôn ngữ hướng đối tượng</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shelf 2: Web Development -->
+          <div class="book-shelf">
+            <h3 class="shelf-title">Phát triển Web</h3>
+            <div class="books-container">
+              <div class="book" data-language="html">
+                <div class="book-spine">HTML</div>
+                <div class="book-cover">
+                  <h4>HTML5</h4>
+                  <p>Cấu trúc trang web</p>
+                </div>
+              </div>
+              <div class="book" data-language="css">
+                <div class="book-spine">CSS</div>
+                <div class="book-cover">
+                  <h4>CSS3</h4>
+                  <p>Thiết kế và styling</p>
+                </div>
+              </div>
+              <div class="book" data-language="react">
+                <div class="book-spine">React</div>
+                <div class="book-cover">
+                  <h4>React</h4>
+                  <p>Framework UI hiện đại</p>
+                </div>
+              </div>
+              <div class="book" data-language="node">
+                <div class="book-spine">Node</div>
+                <div class="book-cover">
+                  <h4>Node.js</h4>
+                  <p>Backend JavaScript</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shelf 3: Advanced Topics -->
+          <div class="book-shelf">
+            <h3 class="shelf-title">Chủ đề Nâng cao</h3>
+            <div class="books-container">
+              <div class="book" data-language="algorithms">
+                <div class="book-spine">Algo</div>
+                <div class="book-cover">
+                  <h4>Thuật toán</h4>
+                  <p>Giải quyết vấn đề hiệu quả</p>
+                </div>
+              </div>
+              <div class="book" data-language="database">
+                <div class="book-spine">DB</div>
+                <div class="book-cover">
+                  <h4>Cơ sở dữ liệu</h4>
+                  <p>Quản lý dữ liệu</p>
+                </div>
+              </div>
+              <div class="book" data-language="security">
+                <div class="book-spine">Sec</div>
+                <div class="book-cover">
+                  <h4>An ninh mạng</h4>
+                  <p>Bảo mật ứng dụng</p>
+                </div>
+              </div>
+              <div class="book" data-language="ai">
+                <div class="book-spine">AI</div>
+                <div class="book-cover">
+                  <h4>Trí tuệ nhân tạo</h4>
+                  <p>Machine Learning & AI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book Detail Modal -->
+        <div id="book-modal" class="book-modal" style="display: none;">
+          <div class="book-modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="book-content">
+              <!-- Content will be loaded here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXPLORE VIEW -->
+      <div id="view-explore" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2><span class="material-icons">explore</span> Khám phá</h2>
+        </div>
+        <p class="view-desc">Khám phá các video thịnh hành và nổi bật!</p>
+        <div id="explore-content" class="video-grid"></div>
+      </div>
+
+      <!-- SUBSCRIPTIONS VIEW -->
+      <div id="view-subscriptions" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2>
+            <span class="material-icons">subscriptions</span> Kênh đăng ký
+          </h2>
+        </div>
+        <p class="empty-state">
+          📢 Bạn chưa đăng ký kênh nào. Tính năng này sẽ sớm ra mắt!
+        </p>
+      </div>
+
+      <!-- CREATE VIDEO VIEW -->
+      <div id="view-create-video" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2>
+            <span class="material-icons">video_call</span> Tạo Video
+          </h2>
+        </div>
+        <div class="create-video-container">
+          <div class="upload-section">
+            <div class="upload-area" id="upload-area">
+              <span class="material-icons">cloud_upload</span>
+              <p>Kéo thả video vào đây hoặc nhấp để chọn</p>
+              <small>MP4, WebM hoặc Ogg · Không giới hạn dung lượng</small>
+              <input type="file" id="video-file" accept="video/mp4,video/webm,video/ogg,.mp4,.webm,.ogg" style="display: none;">
+            </div>
+            <!-- Progress Bar -->
+            <div id="upload-progress-container" class="upload-progress-container" style="display: none;">
+              <div class="upload-progress-info">
+                <span id="upload-progress-text">Đang lưu...</span>
+                <span id="upload-progress-percent">0%</span>
+              </div>
+              <div class="upload-progress-bar">
+                <div id="upload-progress-fill" class="upload-progress-fill" style="width: 0%;"></div>
+              </div>
+              <span id="upload-speed" class="upload-speed"></span>
+            </div>
+            <p id="upload-status" class="upload-status" role="status"></p>
+          </div>
+          <div class="video-details">
+            <input type="text" id="video-title" placeholder="Tiêu đề video" class="form-input">
+            <textarea id="video-description" placeholder="Mô tả video" class="form-textarea"></textarea>
+            <div class="form-actions">
+              <button class="btn-secondary" id="preview-btn">Xem trước</button>
+              <button class="btn-primary" id="publish-btn">
+                <span class="material-icons" style="font-size:18px;vertical-align:middle;margin-right:4px;">cloud_upload</span>
+                Lưu video
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOTIFICATIONS VIEW -->
+      <div id="view-notifications" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2>
+            <span class="material-icons">notifications</span> Thông báo
+          </h2>
+        </div>
+        <div id="notifications-list" class="notifications-container">
+          <div class="notification-item">
+            <div class="notification-icon">
+              <span class="material-icons">subscriptions</span>
+            </div>
+            <div class="notification-content">
+              <p><strong>Janaka Video</strong> đã đăng video mới</p>
+              <span class="notification-time">2 giờ trước</span>
+            </div>
+          </div>
+          <div class="notification-item">
+            <div class="notification-icon">
+              <span class="material-icons">thumb_up</span>
+            </div>
+            <div class="notification-content">
+              <p>Video của bạn nhận được 10 lượt thích</p>
+              <span class="notification-time">1 ngày trước</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MUSIC VIEW -->
+      <div id="view-music" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2><span class="material-icons">library_music</span> Âm nhạc</h2>
+        </div>
+        <div id="music-content" class="video-grid"></div>
+      </div>
+
+      <!-- GAMING VIEW - CODING GAMES -->
+      <div id="view-gaming" class="view-section" style="display: none">
+        <!-- Game Dashboard Header -->
+        <div class="game-dashboard-header">
+          <div class="game-stats-bar">
+            <div class="stat-badge coin-badge">
+              <span class="badg-icon">🪙</span>
+              <span id="player-coins">0</span>
+            </div>
+            <div class="stat-badge streak-badge">
+              <span class="badg-icon">🔥</span>
+              <span id="player-streak">0</span>
+            </div>
+            <div class="stat-badge level-badge">
+              <span class="badg-icon">🌱</span>
+              <span id="player-level">Level 1</span>
+              <div class="xp-bar-container" title="XP Progress">
+                <div
+                  id="player-xp-bar"
+                  class="xp-bar-fill"
+                  style="width: 0%"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <h2>
+            <span class="material-icons">sports_esports</span> Coding Games
+          </h2>
+        </div>
+
+        <!-- Game Cards Grid -->
+        <div class="games-grid">
+          <!-- Game 1: Quiz -->
+          <div class="game-card" onclick="startGame('quiz')">
+            <div class="game-icon quiz-icon">📝</div>
+            <div class="game-content">
+              <h3>Code Quiz</h3>
+              <p>Trắc nghiệm kiến thức lập trình</p>
+              <div class="game-reward">+10 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 2: Debug -->
+          <div class="game-card" onclick="startGame('debug')">
+            <div class="game-icon debug-icon">🐛</div>
+            <div class="game-content">
+              <h3>Debug Master</h3>
+              <p>Tìm và sửa lỗi trong code</p>
+              <div class="game-reward">+15 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 3: Fill Blank -->
+          <div class="game-card" onclick="startGame('fill')">
+            <div class="game-icon fill-icon">✏️</div>
+            <div class="game-content">
+              <h3>Fill the Code</h3>
+              <p>Điền syntax còn thiếu</p>
+              <div class="game-reward">+10 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 4: Speed Typing -->
+          <div class="game-card" onclick="startGame('typing')">
+            <div class="game-icon typing-icon">⚡</div>
+            <div class="game-content">
+              <h3>Speed Typing</h3>
+              <p>Gõ code nhanh giới hạn thời gian</p>
+              <div class="game-reward">+20 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 5: Code Puzzle -->
+          <div class="game-card" onclick="startGame('puzzle')">
+            <div class="game-icon puzzle-icon">🧩</div>
+            <div class="game-content">
+              <h3>Code Puzzle</h3>
+              <p>Sắp xếp dòng code đúng thứ tự</p>
+              <div class="game-reward">+15 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 6: Output Guess -->
+          <div class="game-card" onclick="startGame('output')">
+            <div class="game-icon output-icon">🎯</div>
+            <div class="game-content">
+              <h3>Output Guess</h3>
+              <p>Đoán kết quả chạy code</p>
+              <div class="game-reward">+10 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 7: Daily Challenge -->
+          <div class="game-card special" onclick="startGame('daily')">
+            <div class="game-icon daily-icon">🏆</div>
+            <div class="game-content">
+              <h3>Daily Challenge</h3>
+              <p>3 nhiệm vụ mỗi ngày</p>
+              <div class="game-reward">+30 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 8: Flashcards -->
+          <div class="game-card" onclick="startGame('flashcards')">
+            <div class="game-icon flashcard-icon">🃏</div>
+            <div class="game-content">
+              <h3>Flashcards</h3>
+              <p>Lật thẻ học thuật ngữ</p>
+              <div class="game-reward">+5 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 9: Multichoice -->
+          <div class="game-card" onclick="startGame('multichoice')">
+            <div class="game-icon multi-icon">✅</div>
+            <div class="game-content">
+              <h3>Multichoice</h3>
+              <p>Chọn nhiều đáp án đúng</p>
+              <div class="game-reward">+15 🪙</div>
+            </div>
+          </div>
+
+          <!-- NEW GAMES -->
+
+          <!-- Game 10: React Reactor -->
+          <div class="game-card" onclick="startGame('react')">
+            <div
+              class="game-icon"
+              style="background: #61dbfb20; color: #61dbfb"
+            >
+              ⚛️
+            </div>
+            <div class="game-content">
+              <h3>React Reactor</h3>
+              <p>Hooks & Components Quiz</p>
+              <div class="game-reward">+25 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 11: Node.js Ninja -->
+          <div class="game-card" onclick="startGame('node')">
+            <div
+              class="game-icon"
+              style="background: #3c873a20; color: #3c873a"
+            >
+              🐢
+            </div>
+            <div class="game-content">
+              <h3>Node.js Ninja</h3>
+              <p>Backend & API Mastery</p>
+              <div class="game-reward">+25 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 12: Python Pygmy -->
+          <div class="game-card" onclick="startGame('python')">
+            <div
+              class="game-icon"
+              style="background: #ffe87320; color: #ffe873"
+            >
+              🐍
+            </div>
+            <div class="game-content">
+              <h3>Python Pygmy</h3>
+              <p>Cú pháp & Logic Python</p>
+              <div class="game-reward">+20 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 13: SQL Master -->
+          <div class="game-card" onclick="startGame('sql')">
+            <div
+              class="game-icon"
+              style="background: #00758f20; color: #00758f"
+            >
+              🗄️
+            </div>
+            <div class="game-content">
+              <h3>SQL Master</h3>
+              <p>Truy vấn dữ liệu Database</p>
+              <div class="game-reward">+20 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 14: CSS Visualizer -->
+          <div class="game-card" onclick="startGame('css')">
+            <div
+              class="game-icon"
+              style="background: #264de420; color: #264de4"
+            >
+              🎨
+            </div>
+            <div class="game-content">
+              <h3>CSS Visualizer</h3>
+              <p>Luyện tập Flexbox & Grid</p>
+              <div class="game-reward">+15 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 15: Algo Arena -->
+          <div class="game-card" onclick="startGame('algorithm')">
+            <div
+              class="game-icon"
+              style="background: #ff572220; color: #ff5722"
+            >
+              🧠
+            </div>
+            <div class="game-content">
+              <h3>Algo Arena</h3>
+              <p>Giải thuật toán (LeetCode)</p>
+              <div class="game-reward">+30 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 16: Regex Riddle -->
+          <div class="game-card" onclick="startGame('regex')">
+            <div
+              class="game-icon"
+              style="background: #cc342d20; color: #cc342d"
+            >
+              🧩
+            </div>
+            <div class="game-content">
+              <h3>Regex Riddle</h3>
+              <p>Biểu thức chính quy</p>
+              <div class="game-reward">+20 🪙</div>
+            </div>
+          </div>
+
+          <!-- Game 17: Bug Buster -->
+          <div class="game-card" onclick="startGame('bug_buster')">
+            <div
+              class="game-icon"
+              style="background: #4caf5020; color: #4caf50"
+            >
+              🐛
+            </div>
+            <div class="game-content">
+              <h3>Bug Buster</h3>
+              <p>Sửa lỗi Logic nâng cao</p>
+              <div class="game-reward">+30 🪙</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GAME PLAY MODAL -->
+      <div id="game-modal" class="modal-overlay">
+        <div class="modal-content game-modal-content">
+          <div class="modal-header">
+            <h3 id="game-title">Game Title</h3>
+            <div class="modal-controls">
+              <span id="game-timer" class="game-timer">60s</span>
+              <button class="close-modal-btn" onclick="closeGameModal()">
+                &times;
+              </button>
+            </div>
+          </div>
+          <div id="game-area" class="game-area">
+            <!-- Dynamic game content will be injected here -->
+          </div>
+          <div class="modal-footer">
+            <p id="game-feedback" class="game-feedback"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYLISTS VIEW -->
+      <div id="view-playlists" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2>
+            <span class="material-icons">playlist_play</span> Danh sách phát
+          </h2>
+        </div>
+        <p class="empty-state">
+          🎵 Bạn chưa tạo danh sách phát nào. Tính năng này sẽ sớm ra mắt!
+        </p>
+      </div>
+
+      <!-- SHORTS VIEW -->
+      <div id="view-shorts" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2><span class="material-icons">video_short</span> Video ngắn</h2>
+        </div>
+        <p class="empty-state">🎬 Tính năng Video ngắn sẽ sớm ra mắt!</p>
+      </div>
+
+      <!-- MY VIDEOS VIEW (Video đã lưu trên thiết bị) -->
+      <div id="view-my-videos" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2>
+            <span class="material-icons">video_library</span> Video của tôi
+          </h2>
+          <button id="refresh-my-videos" class="btn-secondary">
+            <span class="material-icons" style="font-size:18px;vertical-align:middle;margin-right:4px;">refresh</span>
+            Làm mới
+          </button>
+        </div>
+        <p class="view-desc">Quản lý các video đã lưu trên thiết bị này.</p>
+        <div id="my-videos-content" class="video-grid">
+          <p class="empty-state">📹 Chưa có video nào được upload. Hãy vào "Tạo Video" để bắt đầu!</p>
+        </div>
+      </div>
+
+      <!-- HELP VIEW -->
+      <div id="view-help" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2><span class="material-icons">help</span> Trợ giúp</h2>
+        </div>
+        <div class="help-content">
+          <div class="help-item">
+            <h3>🔍 Tìm kiếm video</h3>
+            <p>
+              Sử dụng thanh tìm kiếm ở trên để tìm video theo tên hoặc từ khóa.
+            </p>
+          </div>
+          <div class="help-item">
+            <h3>💬 Chat với AI</h3>
+            <p>
+              Nhấn nút Gemini ở góc phải dưới để trò chuyện với AI. Bạn cần nhập
+              API Key trong Cài đặt trước.
+            </p>
+          </div>
+          <div class="help-item">
+            <h3>❤️ Thích video</h3>
+            <p>Nhấn nút tim trên video để thêm vào danh sách yêu thích.</p>
+          </div>
+          <div class="help-item">
+            <h3>⏰ Xem sau</h3>
+            <p>Nhấn nút đồng hồ để lưu video xem sau.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEEDBACK VIEW -->
+      <div id="view-feedback" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2><span class="material-icons">feedback</span> Gửi phản hồi</h2>
+        </div>
+        <div class="feedback-form">
+          <textarea
+            id="feedback-text"
+            placeholder="Nhập phản hồi của bạn..."
+            rows="5"
+          ></textarea>
+          <button id="send-feedback" class="btn-primary">Gửi phản hồi</button>
+        </div>
+      </div>
+
+      <!-- ACCOUNT VIEW -->
+      <div id="view-account" class="view-section" style="display: none">
+        <div class="view-header">
+          <h2>
+            <span class="material-icons">account_circle</span> Tài khoản
+          </h2>
+        </div>
+        <div class="account-container">
+          <!-- Login Form -->
+          <div class="auth-section" id="login-section">
+            <h3>Đăng nhập</h3>
+            <div class="social-login">
+              <button class="btn-google">
+                <span class="material-icons">login</span>
+                Đăng nhập bằng Google
+              </button>
+              <button class="btn-facebook">
+                <span class="material-icons">login</span>
+                Đăng nhập bằng Facebook
+              </button>
+            </div>
+            <div class="divider">
+              <span>hoặc</span>
+            </div>
+            <form class="auth-form">
+              <input type="tel" placeholder="Số điện thoại" class="form-input" required>
+              <input type="email" placeholder="Email" class="form-input" required>
+              <button type="submit" class="btn-primary">Đăng nhập</button>
+            </form>
+            <p class="auth-link">
+              Chưa có tài khoản? <a href="#" onclick="showRegister()">Đăng ký</a>
+            </p>
+          </div>
+
+          <!-- Register Form -->
+          <div class="auth-section" id="register-section" style="display: none;">
+            <h3>Đăng ký</h3>
+            <form class="auth-form">
+              <input type="text" placeholder="Họ và tên" class="form-input" required>
+              <input type="tel" placeholder="Số điện thoại" class="form-input" required>
+              <input type="email" placeholder="Email" class="form-input" required>
+              <input type="password" placeholder="Mật khẩu" class="form-input" required>
+              <input type="password" placeholder="Xác nhận mật khẩu" class="form-input" required>
+              <button type="submit" class="btn-primary">Đăng ký</button>
+            </form>
+            <p class="auth-link">
+              Đã có tài khoản? <a href="#" onclick="showLogin()">Đăng nhập</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAT OVERLAY / WIDGET -->
+      <div id="gemini-chat-widget" class="chat-widget">
+        <div class="chat-header">
+          <div class="chat-header-title">
+            <img
+              src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg"
+              alt="Gemini"
+            />
+            <span>Gemini AI Assistant</span>
+          </div>
+          <button id="close-chat">
+            <span class="material-icons">close</span>
+          </button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+          <div class="message system">
+            👋 Xin chào! Tôi là Gemini AI. Hãy hỏi tôi bất cứ điều gì!
+          </div>
+        </div>
+        <div class="chat-input-area">
+          <input type="text" id="chat-input" placeholder="Nhập tin nhắn..." />
+          <button id="cancel-btn" title="Hủy">
+            <span class="material-icons">stop</span>
+          </button>
+          <button id="send-btn" title="Gửi">
+            <span class="material-icons">send</span>
+          </button>
+        </div>
+      </div>
+      <button id="open-chat-btn" class="fab-chat" aria-label="Mở chat với Gemini AI">
+        <img
+          src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg"
+          alt="Gemini AI"
+        />
+      </button>
+      <!-- WATCH VIEW (YouTube Style) -->
+      <div id="view-watch" class="view-section" style="display: none">
+        <div class="watch-container">
+          <!-- Left: Main Video Content -->
+          <div class="watch-main">
+            <div class="video-player-container">
+              <iframe
+                id="watch-iframe"
+                src=""
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="watch-video-details">
+              <h1 id="watch-title" class="watch-video-title">Video Title</h1>
+
+              <div class="watch-meta-row">
+                <div class="watch-channel-group">
+                  <div
+                    class="watch-avatar-placeholder"
+                    id="watch-channel-avatar"
+                  >
+                    <span class="material-icons">person</span>
+                  </div>
+                  <div class="watch-channel-info">
+                    <h4 id="watch-channel-name" class="channel-name">
+                      Channel Name
+                    </h4>
+                    <p id="watch-sub-count" class="sub-count">1.2M sub</p>
+                  </div>
+                  <button class="btn-subscribe">Đăng ký</button>
+                </div>
+
+                <div class="watch-actions-group" aria-label="Thao tác video">
+                  <button id="watch-like-btn" class="btn-action" type="button" aria-pressed="false">
+                    <span class="material-icons">thumb_up</span>
+                    <span id="watch-likes">10K</span>
+                  </button>
+                  <button id="watch-share-btn" class="btn-action" type="button">
+                    <span class="material-icons">share</span>
+                    Chia sẻ
+                  </button>
+                  <button id="watch-save-btn" class="btn-action" type="button" aria-pressed="false">
+                    <span class="material-icons">playlist_add</span>
+                    Lưu
+                  </button>
+                </div>
+              </div>
+
+              <div id="watch-description-box" class="watch-description-box">
+                <div class="desc-stats">
+                  <span id="watch-view-count">1.2tr lượt xem</span>
+                  <span id="watch-date">3 tuần trước</span>
+                </div>
+                <p id="watch-description" class="desc-text">
+                  Đây là mô tả video...
+                </p>
+                <button class="btn-more">HIỆN THÊM</button>
+              </div>
+
+              <section class="watch-comments" aria-labelledby="comments-title">
+                <div class="comments-heading">
+                  <h2 id="comments-title">Bình luận</h2>
+                  <span class="comments-count">Chia sẻ góc nhìn của bạn</span>
+                </div>
+                <form id="comment-form" class="comment-form">
+                  <div class="comment-avatar">B</div>
+                  <input id="comment-input" type="text" maxlength="240" placeholder="Thêm bình luận..." aria-label="Thêm bình luận" />
+                  <button type="submit" class="comment-submit">Đăng</button>
+                </form>
+                <div id="comments-list" class="comments-list">
+                  <article class="comment-item">
+                    <div class="comment-avatar">J</div>
+                    <div><strong>Janaka Video</strong><p>Chúc bạn học tốt! Hãy để lại câu hỏi nếu cần hỗ trợ.</p></div>
+                  </article>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <!-- Right: Sidebar Recommendations -->
+          <div class="watch-sidebar">
+            <div class="sidebar-filters">
+              <span class="filter-chip active">Tất cả</span>
+              <span class="filter-chip">Của kênh này</span>
+              <span class="filter-chip">Video có liên quan</span>
+            </div>
+            <div id="watch-recommendations" class="watch-video-list">
+              <!-- Sidebar vertical video list injected here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="youtube-api.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="mobile/pwa.js" defer></script>
+  </body>
+</html>
