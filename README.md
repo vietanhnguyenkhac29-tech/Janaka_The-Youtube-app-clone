@@ -5,6 +5,7 @@ Janaka Video là ứng dụng web tiếng Việt giúp người học khám phá
 > **Lưu ý:** Janaka Video là dự án độc lập, không liên kết hoặc được YouTube, Google hay Gemini bảo trợ. Nội dung video được cung cấp bởi YouTube; trải nghiệm quảng cáo phụ thuộc vào YouTube và từng video.
 
 [![Mở mã nguồn Janaka Video](https://img.shields.io/badge/GitHub-Janaka%20Video-181717?logo=github)](https://github.com/vietanhnguyenkhac29-tech/Janaka_The-Youtube-app-clone)
+Results:(https://vietanhnguyenkhac29-tech.github.io/Janaka_The-Youtube-app-clone/)
 
 ## Mục lục
 
